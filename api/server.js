@@ -7,19 +7,17 @@ const server = express()
 
 const characterRouter = require('../auth/character-router.js')
 
-server.use(express.json())
+// server.use(express.json())
 server.use(helmet())
 server.use(morgan('dev'))
 server.use(cors())
 
 server.get('/', (req, res) => {
-  res.status(200).json({
-    message: `It is working!`
-  })
+  res.status(200).json({ message: `test`})
 })
 
 
-// server.use('/api/characters', characterRouter)
+server.use('/api/characters', characterRouter)
 
 
 
