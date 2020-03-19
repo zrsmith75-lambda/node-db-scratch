@@ -1,3 +1,4 @@
 1. create README.md
-2. `npm init -y`
-3. `npx gitignore node`
+2. `git init`
+3. `npm init -y`
+4. `npx gitignore node`
