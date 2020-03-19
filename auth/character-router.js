@@ -6,7 +6,8 @@ const Characters = require('./character-model.js')
 
 router.get('/', (req, res) => {
   
-  Characters.find()
+  Characters
+  .find()
   .then(character => {
     res.status(200).json(character)
   })
