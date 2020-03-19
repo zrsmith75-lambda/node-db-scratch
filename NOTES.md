@@ -19,7 +19,11 @@
 11. build server, character-router
 12. build `dbConfig.js`
 13. `touch .env`  => PORT=5555
-14. 
+14. create model 
+15. `knex migrate:make characters`
+16. `knex migrate:latest`
+17. `knex seed:make 00_characters`
+18. `knex seed:run`
 
 #1 
 ```migrations: {
