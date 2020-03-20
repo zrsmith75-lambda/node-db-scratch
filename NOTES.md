@@ -24,6 +24,8 @@
 16. `knex migrate:latest`
 17. `knex seed:make 00_characters`
 18. `knex seed:run`
+19. build seed data
+20. view in http client
 
 #1 
 ```migrations: {
